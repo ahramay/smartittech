@@ -1,0 +1,191 @@
+// We'll pass this variable to the PHP function example_ajax_request
+    var addr_url = window.location.href;
+    var country = addr_url.split('.')[0].split('//')[1];
+    var gid,curr1,curr,discount,promobanner,currtype,ip;
+    
+           if(country == 'mexico'){
+               gid = 26;
+               ip = '0';
+            }else if(country == 'venezuela'){
+               gid = 27;
+               ip = '0';
+            }else if(country == 'spain'){
+               gid = 39;
+               ip = '0';
+            }else if(country == 'armenia'){
+               gid = 38;
+               ip = '0';
+            }else if(country == 'slovakia'){
+               gid = 31;
+               ip = '0';
+            }else if(country == 'algeria'){
+               gid = 32;
+               ip = '0';
+            }else if(country == 'bahrain'){
+               gid = 34;
+               ip = '0';
+            }else if(country == 'uae' || country == 'dubai'|| country == 'sharjah'|| country == 'abu-dhabi'){
+               gid = 30;
+               ip = '0';
+            }else if(country == 'hong-kong'){
+               gid = 42;
+               ip = '0';
+            }else if(country == 'georgia'){
+               gid = 43;
+               ip = '0';
+	        }else if(country == 'singapore'){
+               gid = 44;
+               ip = '0';
+	        }else if(country == 'albania'){
+               gid = 45;
+               ip = '0';
+	        }else if(country == 'vietnam' || country == 'hanoi' ){
+               gid = 46;
+               ip = '0';
+            }else if(country == 'san-francisco' || country == 'sanfrancisco' ){
+               gid = 47;
+               ip = '0';
+         	}else if(country == 'russia' || country == 'moscow' ){
+               gid = 48;
+               ip = '0';
+            }else if(country == 'sydney'){
+               gid = 49;
+               ip = '0';
+            }else if(country == 'kazakhstan'){
+               gid = 50;
+               ip = '0';
+            }else if(country == 'china' || country == 'zhengzhou' || country == 'guangzhou' || country == 'beijing' || country == 'shanghai' || country == 'taipei' || country == 'macau' || country == 'lhasa' ){
+               gid = 51;
+               ip = '0';
+            }else if(country == 'argentina' || country == 'Buenos-Aires' ){
+               gid = 65; 
+               ip = '0';
+            }else if(country == 'brazil' || country == 'Sao Paulo' ){
+               gid = 53;
+               ip = '0';
+            }else if(country == 'norway' || country == 'kviteseid' ){
+               gid = 54;
+               ip = '0';
+            }else if(country == 'morocco' || country == 'fes' ){
+               gid = 55;
+               ip = '0';
+            }else if(country == 'iran'){
+               gid = 57;
+               ip = '0';
+            }else if(country == 'portugal'){
+               gid = 58;
+               ip = '0';
+            }else if(country == 'malta'){
+               gid = 56;
+               ip = '0';
+            }else if(country == 'cyprus'){
+               gid = 60;
+               ip = '0';
+            }else if(country == 'peru'){
+               gid = 61;
+               ip = '0';
+            }else if(country == 'oman'){
+               gid = 71;
+               ip = '0';
+            }else if(country == 'korea' || country == 'seoul' ){
+               gid = 72;
+               ip = '0';
+            }else if(country == 'japan' || country == 'tokyo' || country == 'osaka' ){
+               gid = 73;
+               ip = '0';
+            }else if(country == 'pk' ){
+               gid = 74;
+               ip = '0';
+            }else if(country == 'macedonia' ){
+               gid = 77;
+               ip = '0';
+            }else if(country == 'serbia' ){
+               gid = 79;
+               ip = '0';
+           }else if(country == 'belgium' ){
+               gid = 80;
+               ip = '0';
+           }else if(country == 'netherlands' ){
+               gid = 81;
+               ip = '0';
+           }else if(country == 'estonia' ){
+               gid = 82;
+           }else if(country == 'france' ){
+               gid = 83;
+               ip = '0';
+          }else if(country == 'colombia' ){
+               gid = 84;
+               ip = '0';
+         }else if(country == 'tonga' ){
+               gid = 85;
+               ip = '0';
+         }else if(country == 'luxembourg' ){
+               gid = 87;
+               ip = '0';
+        }else if(country == 'kenya' ){
+               gid = 90;
+               ip = '0';
+        }else if(country == 'turkmenistan' || country == 'ashgabat' ){
+               gid = 89;
+               ip = '0';
+        }else if(country == 'taiwan' ){
+               gid = 88;
+               ip = '0';
+       }else if(country == 'manchester' ){
+               gid = 91;
+               ip = '0';
+       }else if(country == 'saudi-arabia' || country == 'ksa' ){
+               gid = 92;
+               ip = '0';
+       }else if(country == 'gibraltar' ){
+               gid = 93;
+               ip = '0';
+       }else if(country == 'boston' ){
+               gid = 94;
+               ip = '0';
+
+
+
+
+
+        }else{               
+               gid = 12;
+               ip = '0';
+        }
+           
+           
+           
+           if(country=="pakistan" || country=="pk" || country=="lahore" || country=="karachi" || country=="faisalabad" || country=="rawalpindi" || country=="peshawar" || country=="quetta" || country=="islamabad" || country=="multan" || country=="hyderabad" || country=="gujranwala" || country=="sialkot"){
+                curr='2';
+                discount='';
+                promobanner='';
+                currtype='Rs.';
+                curr1 ='PKR';
+                
+           }else{
+                curr='1';
+                discount='';
+                promobanner='';
+                currtype='$';
+                curr1='USD';
+           }
+     
+    // This does the ajax request
+    $.ajax({
+        url: vps_ajax_obj.ajaxurl, // or example_ajax_obj.ajaxurl if using on frontend
+        data: {
+            'action': 'load_vps_package',
+            'gid' : gid,
+            'curr1' : curr1,
+            'currtype':currtype,
+            'currdigit':curr,
+            'ip':ip
+        },
+        success:function(data) {
+            console.log(data);
+            $(".all-vps").append(data);
+        },
+        error: function(errorThrown){
+            console.log(errorThrown);
+        }
+    });

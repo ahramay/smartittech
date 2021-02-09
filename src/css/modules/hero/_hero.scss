@@ -1,0 +1,72 @@
+.hero-image {
+  //width:100%;
+  height: calc(110vh);
+  background: url('../images/Home/smart.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+ margin-top: 50px;
+  border-bottom: 5px solid #647c9f;
+  //box-sizing: border-box;
+}
+
+.header-image {
+  width: 100%;
+  height: calc(80vh - 130px);
+  background: url('../images/Hero-without-dialogue.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+ 
+  border-bottom: 5px solid #647c9f;
+  //box-sizing: border-box;
+}
+.webdevelopment-img {
+  background: url('../images/web-development/banner.jpg');
+  @include page-img();
+  height: 600px;
+}
+.junior-img {
+  background: url('../images/junior-page-img.jpg');
+  @include page-img();
+}
+.Ecommerce-img {
+  background: url('../images/E-commerce/E-commerce-development.png');
+  @include page-img();
+}
+.senior-img {
+  background: url('../images/senior-page-img.jpg');
+  @include page-img();
+}
+.logo-img {
+  background: url('../images/Logo-design/hero.png');
+  @include page-img();
+}
+.Website-Design-img {
+  background: url('../images/web-design/hero.jpg');
+  @include page-img();
+}
+.achievers-img {
+  background: url('../images/achievers-page-img.jpg');
+  @include page-img();
+  background-size: auto;
+}
+.MobileApp-img {
+  background: url('../images/Mobile-app/hero.jpg');
+  @include page-img();
+}
+.events-img {
+  background: url('../images/events-page-img.jpg');
+  @include page-img();
+}
+.career-img {
+  @include page-img();
+  background: url('../images/career-page-img.jpg');
+}
+.contact-img {
+  @include page-img();
+  background: url('../images/Home/smart.jpg');
+}
+

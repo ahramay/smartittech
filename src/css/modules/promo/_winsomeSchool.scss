@@ -1,0 +1,183 @@
+
+.services {
+    margin-top: 40px;
+    background-image: url('../img/services.jpg');
+    padding: 30px 0 0 0;
+  }
+  .services .section-header h2{
+    color:#134A7D ;
+    font-size: 26px;
+  }
+  
+  .services .col-lg-6 .web{
+    width: 100px;
+    height: 100px;
+    color: #444;
+    transition: 0.5s;
+    line-height: 0;
+  }
+  .services .box {
+    padding: 10px;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+    background: #004a80;
+    transition: 0.4s;
+  }
+  .services .box{
+    margin-top: 20px;
+  }
+  .services .box:hover {
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+  }
+  
+  .services .box .icon {
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 20vh;
+    height: 20vh;
+  }
+  
+  .services .box .icon-1 {
+    margin-left: 130px;
+    margin-top: -40px;
+    width: 40vh;
+    height: 40vh;
+  }
+  .services .box .icon-2 {
+    margin-left: 150px;
+    margin-top: -20px;
+    width: 35vh;
+    height: 35vh;
+  }
+  .services .box .icon-3 {
+    margin-left: 150px;
+    margin-top: -50px;
+    width: 35vh;
+    height: 35vh;
+  }
+  @media (max-width:760px){
+    .services .box .icon {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media (max-width:1024px){
+    .services .box .icon-1 {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media (max-width:760px){
+    .services .box .icon-1 {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media (max-width:1024px){
+    .services .box .icon-1 {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media (max-width:760px){
+    .services .box .icon-2 {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media (max-width:1024px){
+    .services .box .icon-2 {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media (max-width:760px){
+    .services .box .icon-3 {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media (max-width:1024px){
+    .services .box .icon-3 {
+        margin: 0;
+        padding: 0;
+    }
+  }
+  
+  
+  .services .box h4 {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  .services .box h4 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .services .box .title-1{
+    display: flex;
+    margin-top: -50px;
+  }
+  
+  .services .box p {
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+  .service .box:hover {
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+  }
+  
+
+// #winsome-school {
+//   min-height: 1000px;
+//   width: 100%;
+//   background: linear-gradient($primary-color, $secondary-color);
+//   .winsome-school-heading {
+//     @include H2(center, $white);
+//   }
+//   .winsome-school-hidden-heading {
+//     @include H2(center, $primary-color);
+//   }
+// }
+
+// // Styles smaller than mobile/tablet
+
+// @media only screen 
+// and (max-width: 940px)
+// and (min-width: 768px) {
+//   #winsome-school {
+//     min-height: 1600px;
+//     .winsome-school-heading {
+//       @include H2Mobile(center, $white);
+//     }
+//     .winsome-school-hidden-heading {
+//       @include H2Mobile(center, $primary-color);
+//     }
+//   }
+// }
+
+// @media only screen 
+// and (max-width: 767px)
+// and (min-width: 320px) {
+//   #winsome-school {
+//     min-height: 1950px;
+//     .winsome-school-heading {
+//       @include H2Mobile(center, $white);
+//     }
+//     .winsome-school-hidden-heading {
+//       @include H2Mobile(center, $primary-color);
+//     }
+//   }
+// }
