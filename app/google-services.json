@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "992525597737",
+    "firebase_url": "https://urdu-bible-quiz-7dd7c-default-rtdb.firebaseio.com",
+    "project_id": "urdu-bible-quiz-7dd7c",
+    "storage_bucket": "urdu-bible-quiz-7dd7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992525597737:android:5bc9e20d0ece8ceac7f038",
+        "android_client_info": {
+          "package_name": "com.asifnazir.urdubiblequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992525597737-67ojdpaud4niugns4hilc11j4r4ak75p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_ZTbMgB6IR_Pk5qjyHtIVlc3xF2C53Zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992525597737-67ojdpaud4niugns4hilc11j4r4ak75p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
